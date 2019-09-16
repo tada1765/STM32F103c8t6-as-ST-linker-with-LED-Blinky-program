@@ -38,68 +38,69 @@ Why making this device?
 
 1. download all the necessary software and prepare the hardware that mention above which require at least two STM32F103c8t6 and one FTDI or usb to ttl device.
 
-2. Connect follow circuit diagram and set jumper BOOT0 to 1 then connect USB cable to FTDI and your PC. 
+2. Connect follow circuit diagram and set jumper BOOT0 to 1 then connect USB cable to FTDI and your PC.
+
 ![USB-TTL](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/e4c92258c73028613f4fdb939cb2021f/image.png)
 *NOTE: Use 3.3V voltage, do not apply 5V voltage.
 
 3. Open and run Flash Loader Demo and configure as diagram below:
-![FLD1](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/94534fe058ac37553d53f89affefafcb/image.png)
 
+![FLD1](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/94534fe058ac37553d53f89affefafcb/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 4. Click remove protection if your MCU have program before.
+
  ![FLD2](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/779879d273bfcfaded2105864df26f5c/image.png)
- 
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 5. Just clink Next.
-![FLD3](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/bdfa413d607d0d06292579675175643b/image.png)
 
+![FLD3](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/bdfa413d607d0d06292579675175643b/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 6. clink green mark then select the Hex file, download the Hex file here, [click here](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/c8cf474669aaf68266874c717dab1d2a/hex.hex).
-![FLD4](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/bf4823053fe3ee68e2a48796d55c4ee7/image.png)
 
+![FLD4](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/bf4823053fe3ee68e2a48796d55c4ee7/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 7. And then click Next and the Loader will start to download program the micro controller:
-![FLD5](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/9fc47373b4ddb3bf199d7247bd34dc1e/image.png)
 
+![FLD5](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/9fc47373b4ddb3bf199d7247bd34dc1e/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 8. And then it will also start to verify it:
-![FLD6](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/7ba9fa2ee97b27d2b3b917665fb8b94a/image.png)
 
+![FLD6](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/7ba9fa2ee97b27d2b3b917665fb8b94a/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 9. when is done close it:
-![FLD7](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/151e9d83321c51f55c3165c4a4c2578d/image.png)
 
+![FLD7](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/151e9d83321c51f55c3165c4a4c2578d/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 10. Now we disconnect everything and connect our board to computer with micro USB cable and also move the BOOT0 jumper back to 0. Now we start ST-LINK Utility, select ST-LINK -> Firmware update:
-![FLD8](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/3b5b3893c6b14fc86bceee3e29be8929/image.png)
 
+![FLD8](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/3b5b3893c6b14fc86bceee3e29be8929/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 11. New window opens and here we click on Device Connect and it will connect to our new ST-LINK:
-![FLD9](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/d5bfba5c252155d40b10334b3ed71870/image.png)
 
+![FLD9](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/d5bfba5c252155d40b10334b3ed71870/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 12. click on Yes and it will start to upgrade:
-![FLD10](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/7009f196683b80e7aae1fff13df39bf6/image.png)
 
+![FLD10](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/7009f196683b80e7aae1fff13df39bf6/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 13. When it’s done it will let us know:
-![FLD11](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/1a51af92d15fbfcf62cc8afafbc2a9ce/image.png)
 
+![FLD11](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/1a51af92d15fbfcf62cc8afafbc2a9ce/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 14. Now all we need to do is test it. I am testing it according to diagram below with another Blue Pill (don’t miss that short connection between PB12 and PB14!!!):
-![cir1](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/68c1ce389b35a5ce95d869dfbb74bcdb/image.png)
 
+![cir1](https://trello-attachments.s3.amazonaws.com/5cee4774d8fcdd32c2d51358/5d7f01c7cb26a91ef2c681dd/68c1ce389b35a5ce95d869dfbb74bcdb/image.png)
 diagram came form http://slemi.info/2018/08/14/making-your-own-st-link-v2/
 
 OR 
