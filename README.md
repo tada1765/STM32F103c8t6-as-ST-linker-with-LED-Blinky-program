@@ -110,6 +110,7 @@ OR
 1.1 : NOW STAR PROGRAM STM32F103c8t6 (LED Blinky)
 --------------------------------------------------------------
 Objective: use of STM32CubeIDE to set GPIO PINC13 as GPIO output, then use _HAL function for LED to blink.
+For the beginer can refer to the video from Controllers Tech, [video here](https://www.youtube.com/watch?v=e_NSqz5P8Qk) to understand more about the software "STM32cude IDE".
 
 1.2 Testes Function:
 ------------------
@@ -149,6 +150,8 @@ at line 102 add the program inside USER CODE BEGIN 3 until USER CODE END 3.
 1.5 circuit connection:
 -------------------------
 - connect GPIO pin that set early which is PA2 or PA3 or PA5 to LED with 220 ohm resistor and the other side of the resistor go to ground.
+
+- connect the USB cable to the STM32f103c8t6 which has the ST link program uploaded to the PC not the other STM32f103c8t6 that waiting to be program by STM32cube IDE later on. 
 
 1.6 Summary:
 ---------------
